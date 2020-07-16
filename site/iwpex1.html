@@ -1,0 +1,61 @@
+<!doctype html>
+<HTML>
+    <head>
+        <title>Hackathon Registration</title>
+        <meta charset="utf-8">
+    </head>
+    <body style="background-color: beige;color:darkolivegreen">
+        <p><strong><h1>Hackathon Registration</h1></strong></p>
+        <form name="regist" method="post" style="font-family: sans-serif">
+            <table width="600" border="0" cellspacing="2" cellpadding="2">
+                <tr>
+                <td>Name:</td>
+                <td><input type="text" maxlen="20" size="30" pattern="[^0-9]+" required style="border-color:darkgoldenrod;background-color:cornsilk"/></td>
+                </tr>
+                <tr>
+                <td>Reg No:</td>
+                <td><input type="text" size="30" pattern="[0-9]{2}[A-Z]{3}[0-9]{4}$" required style="border-color:darkgoldenrod;background-color:cornsilk"/></td>
+                </tr>
+                <tr>
+                <td>Email:</td>
+                <td><input type="email" size="30" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required style="border-color:darkgoldenrod;background-color:cornsilk"/></td>
+                </tr>
+                <tr>
+                <td>Domain:</td>
+                <td><input type="radio" name="domain" value="ml" />
+                    <label for="ml">Machine learning</label>
+                    <input type="radio" name="domain" value="Bl" />
+                    <label for="Bl">Blockchain</label></td>
+                </tr>
+                <tr>
+                <td>Course type:</td>
+                <td><select type="text" value="" name="Subject" style="border-color:darkgoldenrod;background-color:cornsilk"> 
+                    <option>BTech</option> 
+                    <option>MTech</option> 
+                    <option>PHD</option>
+                </select></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><p>Project discription:</p>
+                    <textarea name="discription" rows="5" cols="50" required style="border-color:darkgoldenrod;background-color:cornsilk"></textarea></td>
+                </tr>
+                <tr>
+                <td colspan="2"><input type="checkbox" name="addn" value="cb" />
+                    <label for="cb"><small>Recieve additional mails about upcoming hackathons</small></label></td>
+                </tr>
+                <tr>
+                <td>
+                <input type="submit" name="submit" value="Submit" style="background-color:cornsilk"/>
+                </td>
+                <td>
+                <input type="reset" name="reset" value="Reset" style="background-color:cornsilk"/>
+                </td></tr>
+            </table>
+        </form>
+        <p style="text-align:left;"><i>Short video from our sponsors:</i></p>
+        <video controls preload="metadata">
+    <source src="http://techslides.com/demos/sample-videos/small.mp4" type="video/mp4"/>
+    Video not supported.
+</video>
+    </body>
+</HTML>
